@@ -93,9 +93,6 @@ public class MotorcycleInstallmentTest {
 
         String[] result = motorInstallment.monltyInstallment();
 
-        for (String string : result) {
-            System.out.println(string);
-        }
         assertArrayEquals(expectedResult, result);
     }
 

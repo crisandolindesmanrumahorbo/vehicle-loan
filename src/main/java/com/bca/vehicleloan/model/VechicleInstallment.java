@@ -8,9 +8,7 @@ import java.time.Year;
 import com.bca.vehicleloan.constant.Constant;
 import com.bca.vehicleloan.exception.InputFormatException;
 
-public abstract class VechicleInstallment {
-    public abstract String[] monltyInstallment();
-
+public abstract class VechicleInstallment implements IInstallment {
     protected String[] getMonltyInstallment(int tenor, float baseInterest, int principalLoan) {
         String[] monthlyInstallments = new String[tenor];
         float principalLoanAggregate = principalLoan;
